@@ -1,0 +1,202 @@
+
+pre {
+    white-space: pre-wrap;
+}
+body {
+    font-family: 'Consolas';
+    font-size:14px;
+    background-color: var(--bg);
+    color: var(--tc);
+}
+
+.error {
+    background-color: red;
+}
+.exception {
+    background-color: orange;
+}
+.api {
+    background-color: blue;
+}
+.flood {
+    background-color: purple;
+}
+
+a {
+    color:var(--a);
+    text-decoration:none;
+}
+/* templates/home.php */
+.home {
+    margin:0;padding:0;
+    height:100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(auto, 0.3fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+.home .header { grid-area: 2 / 4 / 3 / 8; }
+.home .description { grid-area: 3 / 4 / 5 / 8; }
+.home .content { margin-top:24px;grid-area: 5 / 3 / 10 / 9; }
+
+.content .linkcontainer {
+    align-content: center;
+    justify-content: center;
+    align-items: start;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 0.3fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    .linkcontainer .link { 
+        padding:8px; border-left: 1px dashed var(--br); border-bottom: 1px dashed var(--br); grid-area: auto; }
+
+/** end **/
+
+/* templates/board.php */
+.board {
+    align-content: center;
+    justify-content: center;
+    align-items: start;
+    margin:0;padding:0;
+    height:100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(auto, 0.3fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+.board .header { grid-area: 2 / 4 / 3 / 8; }
+.board .description { grid-area: 3 / 4 / 5 / 8; }
+.board .content { margin-top:24px; grid-area: 5 / 3 / 10 / 9; }
+
+.content .postcontainer {
+    align-content: center;
+    justify-content: center;
+    align-items: start;
+    display: grid;
+    grid-template-columns: repeat(var(--grid), 1fr);
+    grid-template-rows: repeat(auto, 0.3fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    .postcontainer .post { padding:8px; border-left: 1px dashed var(--br); border-bottom: 1px dashed var(--br); grid-area: auto;}
+
+
+.post .content {
+    padding-left:24px;
+}
+
+.post .content p {
+    margin-top:0;
+    padding-top:4px;
+}
+/** end **/
+
+/* templates/thread.php */
+.thread {
+    align-content: center;
+    justify-content: center;
+    align-items: start;
+    margin:0;padding:0;
+    height:100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(auto, 0.3fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+.thread .description { grid-area: 3 / 4 / 5 / 8; }
+.thread .content { margin-top:24px; grid-area: 5 / 3 / 10 / 9; }
+.thread .header { 
+    grid-area: 2 / 4 / 3 / 8; 
+}
+.thread .header a {
+
+    margin:0;padding:0;
+    text-decoration: none;
+}
+.thread .threadcontainer {
+    border-left:1.5px dashed var(--br);
+    border-bottom:1px dashed var(--br);
+    padding:8px;
+    display: grid;
+    grid-template-columns: repeat(var(--list), 1fr);
+    grid-template-rows: repeat(auto, 0.3fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-overflow:clip;
+    }
+    .thread .post {grid-area: auto;text-overflow:clip;}
+    
+    .thread .post .header {
+        padding-bottom:4px;
+    }
+
+    .thread .post .subject {
+        padding-top:4px;
+        font-style: italic;
+    }
+    .thread .post .threadcontent {
+        display:block;
+        font-style:normal;
+        text-overflow:clip;
+    }
+
+    .thread .reply {
+        padding:8px;
+        border-left:1.5px dashed var(--br);
+        border-bottom:1px dashed var(--br);
+        margin-left:32px;
+        grid-area:auto;
+    }
+    .thread .reply .header {
+        font-style: normal;
+        padding-bottom:4px;
+    }
+    .thread .reply .replycontent {
+        margin-left:24px;
+        font-style:normal;
+    }
+
+/* Forms and tablatures */
+
+/** Reply/NewThread Form **/
+.replycontent table {
+    width:100%;
+}
+.title {
+    width:11%;
+    text-align:right;
+}
+.felem {
+    width:55%;
+}
+.tip {
+    width:33.3%;
+}
+table input[type=text] {
+    width:calc(100% - 12px);
+}
+table input[type=url] {
+    width:calc(100% - 12px);
+}
+table select {
+    margin:0;padding:0;
+    height:21.2px;
+    width:calc(100% - 4px);
+}
+table input[type=number] {
+    width:calc(100% - 12px);
+}
+table input[type=submit] {
+    float:right;
+}
+table textarea {
+    width:calc(100% - 12px);
+}
+/** end **/
