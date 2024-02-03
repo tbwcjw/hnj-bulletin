@@ -1,0 +1,6 @@
+HNJ - A text-only bulletin board written in PHP with caching, spam detection, banning, flood protection, multiple themes, read-only boards and support for sharing magnet links
+
+![image](https://github.com/tbwcjw/hjn-bulletin/assets/35520616/e5b484e1-8304-4b6a-a076-ae7f0bd5d74a)
+![image](https://github.com/tbwcjw/hjn-bulletin/assets/35520616/972abd5c-8119-45c0-8dbf-36d07817a15d)
+![image](https://github.com/tbwcjw/hjn-bulletin/assets/35520616/31656066-a870-41e5-8ea6-bed5ada61173)
+![image](https://github.com/tbwcjw/hjn-bulletin/assets/35520616/09397172-19a9-4b04-bcab-68176b7e69ca)
