@@ -1,4 +1,5 @@
-##HNJ 
+HNJ 
+
 A text-only bulletin board written in PHP with caching, spam detection, banning, flood protection, multiple themes, read-only boards and support for sharing magnet links.
 Written for speed. Employs no external libraries nor frameworks. Ballz to the wallz.
 
